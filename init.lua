@@ -46,7 +46,7 @@ minetest.register_node("tranchee:mitraillette",{
 	tiles = {"mitrailette.png"},
 	inventory_image = "img_mitraillette.png",
 	groups = {cracky=1},
-	--on_rightclick = function(pos, node, player, pointed_thing)
-		
-	--end,
+	on_rightclick = function(pos, node, player, pointed_thing)
+		minetest.sound_play("tir")
+	end,
 })
