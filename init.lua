@@ -9,6 +9,7 @@ minetest.register_node("tranchee:sac_sable",{
 	--drop="recycle:bouteille_eau",
 	--buildable_to = false,
 	groups = {crumbly=2},
+	sounds = default.node_sound_sand_defaults(),
 })
 
 minetest.register_node("tranchee:boue",{
@@ -22,6 +23,7 @@ minetest.register_node("tranchee:boue",{
 	--drop="recycle:bouteille_eau",
 	--buildable_to = false,
 	groups = {crumbly=2},
+	sounds = default.node_sound_dirt_defaults(),
 })
 
 minetest.register_node("tranchee:boue1",{
@@ -35,6 +37,9 @@ minetest.register_node("tranchee:boue1",{
 	--drop="recycle:bouteille_eau",
 	--buildable_to = false,
 	groups = {crumbly=2},
+	sounds = default.node_sound_dirt_defaults({
+		footstep = {name="default_snow_footstep", gain=0.25},
+	}),
 })
 
 minetest.register_node("tranchee:mitraillette",{
