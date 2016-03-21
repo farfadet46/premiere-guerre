@@ -1,3 +1,7 @@
+-- By farfadet46
+-- https://github.com/farfadet46
+-- https://twitter.com/farfadet46
+
 minetest.register_node("tranchee:sac_sable",{
 	description = "sac de sable",
 	drawtype="node",
@@ -5,9 +9,6 @@ minetest.register_node("tranchee:sac_sable",{
 	inventory_image = "inv_sac_sable.png",
 	wield_image = "inv_sac_sable.png",
 	paramtype="light",
-	--walkable = false,
-	--drop="recycle:bouteille_eau",
-	--buildable_to = false,
 	groups = {crumbly=2},
 	sounds = default.node_sound_sand_defaults(),
 })
@@ -16,12 +17,7 @@ minetest.register_node("tranchee:boue",{
 	description = "Boue",
 	drawtype="node",
 	tiles ={"boue.png"},
-	--inventory_image = "boue.png",
-	--wield_image = "inv_sac_sable.png",
 	paramtype="light",
-	--walkable = false,
-	--drop="recycle:bouteille_eau",
-	--buildable_to = false,
 	groups = {crumbly=2},
 	sounds = default.node_sound_dirt_defaults(),
 })
@@ -30,12 +26,7 @@ minetest.register_node("tranchee:boue1",{
 	description = "Boue1",
 	drawtype="node",
 	tiles ={"boue1.png"},
-	--inventory_image = "boue.png",
-	--wield_image = "inv_sac_sable.png",
 	paramtype="light",
-	--walkable = false,
-	--drop="recycle:bouteille_eau",
-	--buildable_to = false,
 	groups = {crumbly=2},
 	sounds = default.node_sound_dirt_defaults({
 		footstep = {name="default_snow_footstep", gain=0.25},
