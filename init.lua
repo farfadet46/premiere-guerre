@@ -2,7 +2,9 @@
 -- https://github.com/farfadet46
 -- https://twitter.com/farfadet46
 
-minetest.register_node("tranchee:sac_sable",{
+local mod_name = minetest.get_current_modname()
+
+minetest.register_node( mod_name .. ":sac_sable",{
 	description = "sac de sable",
 	drawtype="node",
 	tiles ={"sac_sable.png"},
@@ -13,7 +15,7 @@ minetest.register_node("tranchee:sac_sable",{
 	sounds = default.node_sound_sand_defaults(),
 })
 
-minetest.register_node("tranchee:boue",{
+minetest.register_node( mod_name .. ":boue",{
 	description = "Boue",
 	drawtype="node",
 	tiles ={"boue.png"},
@@ -22,7 +24,7 @@ minetest.register_node("tranchee:boue",{
 	sounds = default.node_sound_dirt_defaults(),
 })
 
-minetest.register_node("tranchee:boue1",{
+minetest.register_node( mod_name .. ":boue1",{
 	description = "Boue1",
 	drawtype="node",
 	tiles ={"boue1.png"},
@@ -33,7 +35,7 @@ minetest.register_node("tranchee:boue1",{
 	}),
 })
 
-minetest.register_node("tranchee:mitraillette",{
+minetest.register_node( mod_name .. ":mitraillette",{
 	description = "Mitraillette fixe",
 	drawtype = "mesh",
 	mesh = "mitraillette.b3d",
