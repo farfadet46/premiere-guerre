@@ -48,3 +48,18 @@ minetest.register_node( mod_name .. ":mitraillette",{
 		minetest.sound_play("tir")
 	end,
 })
+
+minetest.register_node( mod_name .. ":barbele",{
+	description = "barbelé",
+	drawtype = "mesh",
+	mesh = "barbele.b3d",
+	damage_per_second = 1, -- supprimer cette ligne pour ne pas faire de dégat aux joueurs.
+	paramtype = "light",
+	paramtype2 = "facedir",
+	tiles = {"barbele.png"},
+	inventory_image = "img_barbele.png",
+	groups = {cracky=1},
+	--on_rightclick = function(pos, node, player, pointed_thing)
+	--	minetest.sound_play("tir")
+	--end,
+})
