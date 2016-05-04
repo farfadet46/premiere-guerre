@@ -4,6 +4,7 @@
 
 local mod_name = minetest.get_current_modname()
 
+--[[
 minetest.register_node( mod_name .. ":sac_sable",{
 	description = "sac de sable",
 	drawtype="node",
@@ -11,6 +12,20 @@ minetest.register_node( mod_name .. ":sac_sable",{
 	inventory_image = "inv_sac_sable.png",
 	wield_image = "inv_sac_sable.png",
 	paramtype="light",
+	groups = {crumbly=2},
+	sounds = default.node_sound_sand_defaults(),
+})
+]]--
+
+minetest.register_node( mod_name .. ":sac_sable",{
+	description = "sac de sable",
+	drawtype="mesh",
+	mesh="sac.obj",
+	tiles ={"sac.png"},
+	inventory_image = "inv_sac_sable.png",
+	wield_image = "inv_sac_sable.png",
+	paramtype = "light",
+	paramtype2 = "facedir",
 	groups = {crumbly=2},
 	sounds = default.node_sound_sand_defaults(),
 })
